@@ -28,24 +28,7 @@ while LOOP:
         if e.type == pygame.QUIT:
             LOOP = False
     screen.blit (sprite, POS)
-    if e.type == pygame.KEYDOWN:
-            if e.key == pygame.K_LEFT:
-                x=x-1
-                POS = (x,y)
-                pygame.display.update()
-            if e.key == pygame.K_RIGHT:
-                x=x+1
-                POS = (x,y)
-                pygame.display.update()
-            if e.key == pygame.K_DOWN:
-                y=y+1
-                POS = (x,y)
-                pygame.display.update()
-            if e.key == pygame.K_UP:
-                y=y-1
-                POS = (x,y)
-                pygame.display.update()
-
+   
     if porta == "E":
         x=x-10
         POS = (x,y)
@@ -67,6 +50,5 @@ while LOOP:
         y=y-10
         POS = (x,y)
         pygame.display.update()
-    
-    print(porta)
+   
 
